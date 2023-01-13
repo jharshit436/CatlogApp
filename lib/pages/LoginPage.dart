@@ -23,7 +23,7 @@ class _LoginPageState extends State<LoginPage> {
             fit: BoxFit.cover,
           ),
           const SizedBox(
-            height: 20.0,
+            height: 40.0,
           ),
           Text(
             "Welcome $name ",
@@ -61,19 +61,19 @@ class _LoginPageState extends State<LoginPage> {
                   Navigator.pushNamed(context, MyRoutes.homeroute);
                 },
                 child: AnimatedContainer(
-                  duration: Duration(seconds: 1),
+                  duration: Duration(seconds: 3),
                   height: 50,
-                  width: changedButton ? 150 : 50,
+                  width: changedButton ? 50 : 150,
                   alignment: Alignment.center,
                   child: Text(
                     "Login",
                     style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
-                        color: Colors.black),
+                        color: Colors.white),
                   ),
                   decoration: BoxDecoration(
-                      color: Colors.deepPurple,
+                      color: Color.fromARGB(255, 68, 183, 58),
                       borderRadius: BorderRadius.circular(8)),
                 ),
               )

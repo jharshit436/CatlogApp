@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/utils/routes.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -7,7 +8,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ImageUrl =
-        "https://media.licdn.com/dms/image/C5603AQEGyKj2e8046w/profile-displayphoto-shrink_200_200/0/1633094904991?e=2147483647&v=beta&t=jsU43D_EagbgmfPk1v6rFHE5iXvldWf7XzjfDHXXqBo";
+        "https://media.licdn.com/dms/image/D4D03AQFpt00iYVyUEA/profile-displayphoto-shrink_800_800/0/1670232676164?e=2147483647&v=beta&t=AkrtYAjQ1wbhiu0wXuS8dkOyyBlARQmOKjBIOLS-ovg";
     return Drawer(
         child: Container(
       decoration: BoxDecoration(color: Colors.black12),
@@ -22,9 +23,13 @@ class MyDrawer extends StatelessWidget {
             // currentAccountPicture: Image.network(ImageUrl), for square image
             currentAccountPicture: CircleAvatar(
               backgroundImage: NetworkImage(ImageUrl),
+              radius: 40,
             ),
           )),
           ListTile(
+            onTap: () {
+              Navigator.pushNamed(context, MyRoutes.loginroute);
+            },
             leading: Icon(
               CupertinoIcons.home,
               color: Colors.blueAccent,
