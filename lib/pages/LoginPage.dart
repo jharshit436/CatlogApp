@@ -61,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                   Navigator.pushNamed(context, MyRoutes.homeroute);
                 },
                 child: AnimatedContainer(
-                  duration: Duration(seconds: 3),
+                  duration: Duration(seconds: 10),
                   height: 50,
                   width: changedButton ? 50 : 150,
                   alignment: Alignment.center,
@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                         color: Colors.white),
                   ),
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 68, 183, 58),
+                      color: Colors.red,
                       borderRadius: BorderRadius.circular(8)),
                 ),
               )

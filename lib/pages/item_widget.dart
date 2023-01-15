@@ -15,7 +15,7 @@ class ItemWidget extends StatelessWidget {
         trailing: Text(
           "\$ ${item.price.toString()}",
           textScaleFactor: 1.5,
-          style: TextStyle(color: Colors.purple),
+          style: TextStyle(color: Colors.red),
         ),
       ),
     );
