@@ -54,16 +54,10 @@ class _LoginPageState extends State<LoginPage> {
                 height: 40.0,
               ),
               InkWell(
-                onTap: () {
-                  setState(() {
-                    changedButton = true;
-                  });
-                  Navigator.pushNamed(context, MyRoutes.homeroute);
-                },
                 child: AnimatedContainer(
-                  duration: Duration(seconds: 10),
+                  duration: Duration(seconds: 3),
                   height: 50,
-                  width: changedButton ? 50 : 150,
+                  width: changedButton ? 100 : 150,
                   alignment: Alignment.center,
                   child: Text(
                     "Login",
@@ -76,6 +70,12 @@ class _LoginPageState extends State<LoginPage> {
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(8)),
                 ),
+                onTap: () {
+                  setState(() {
+                    changedButton = true;
+                  });
+                  Navigator.pushNamed(context, MyRoutes.homeroute);
+                },
               )
               // ElevatedButton(
               //   onPressed: () {

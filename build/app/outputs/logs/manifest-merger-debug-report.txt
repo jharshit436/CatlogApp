@@ -17,6 +17,7 @@ INJECTED from /home/harshit/Desktop/Flutter/flutter_application_1/android/app/sr
 INJECTED from /home/harshit/Desktop/Flutter/flutter_application_1/android/app/src/main/AndroidManifest.xml:1:1-36:12
 INJECTED from /home/harshit/Desktop/Flutter/flutter_application_1/android/app/src/main/AndroidManifest.xml:1:1-36:12
 MERGED from /home/harshit/Desktop/Flutter/flutter_application_1/android/app/src/main/AndroidManifest.xml:1:1-36:12
+MERGED from [:fluttertoast] /home/harshit/Desktop/Flutter/flutter_application_1/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] /home/harshit/Desktop/Flutter/flutter_application_1/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/harshit/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /home/harshit/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
@@ -66,6 +67,8 @@ uses-sdk
 INJECTED from /home/harshit/Desktop/Flutter/flutter_application_1/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/harshit/Desktop/Flutter/flutter_application_1/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/harshit/Desktop/Flutter/flutter_application_1/android/app/src/main/AndroidManifest.xml
+MERGED from [:fluttertoast] /home/harshit/Desktop/Flutter/flutter_application_1/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /home/harshit/Desktop/Flutter/flutter_application_1/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] /home/harshit/Desktop/Flutter/flutter_application_1/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] /home/harshit/Desktop/Flutter/flutter_application_1/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /home/harshit/.gradle/caches/transforms-3/246793f755122fe14a5802655438cb75/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
