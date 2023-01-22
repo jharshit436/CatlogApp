@@ -1,6 +1,6 @@
+// ignore: file_names
 import 'dart:convert';
 
-import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -11,26 +11,30 @@ import 'package:flutter_application_1/widgets/drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
-
   @override
   State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   void initState() {
-    initState();
+    super.initState();
     loadData();
   }
 
   loadData() async {
+    await Future.delayed(Duration(seconds: 2));
     var catalogJson = await rootBundle.loadString("Assets/files/catlog.json");
-    var decodeData = jsonDecode(catalogJson);
-    print(decodeData);
+    var decodedData = jsonDecode(catalogJson);
+    var productsData = decodedData["products"];
+    CatalogModel.items = List.from(productsData)
+        .map<Item>((item) => Item.fromMap(item))
+        .toList();
+    setState(() {});
   }
-}
 
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     // ignore: unused_local_variable
-    final list = List.generate(100, (index) => CatalogModel.items[0]);
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
@@ -42,10 +46,10 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         body: ListView.builder(
-            itemCount: list.length,
+            itemCount: CatalogModel.items.length,
             itemBuilder: (context, index) {
               return ItemWidget(
-                item: list[index],
+                item: CatalogModel.items[index],
               );
             }),
         // ListView(
