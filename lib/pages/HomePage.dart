@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +14,16 @@ class HomePage extends StatefulWidget {
 
   @override
   State<HomePage> createState() => _HomePageState();
+  void initState() {
+    initState();
+    loadData();
+  }
+
+  loadData() async {
+    var catalogJson = await rootBundle.loadString("Assets/files/catlog.json");
+    var decodeData = jsonDecode(catalogJson);
+    print(decodeData);
+  }
 }
 
 class _HomePageState extends State<HomePage> {
